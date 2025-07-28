@@ -1,0 +1,70 @@
+📊 DevConnector Project API Structure
+
+
+🧑‍💻 User Routes
+
+Model	Method	Endpoint	Description
+User	POST	/api/users/signup	Signup new user
+POST	/api/users/login	Login user and return JWT
+GET	/api/users/me	Get current logged-in user
+DELETE	/api/users/delete	Delete user account (and profile)
+GET	/api/users	Get list of all users (admin-only feature)
+
+👤 Profile Routes
+
+Model	Method	Endpoint	Description
+Profile	GET	/api/profile/me	Get current user's profile
+POST	/api/profile	Create or update user profile
+GET	/api/profile	Get all profiles
+GET	/api/profile/user/:userId	Get profile by user ID
+DELETE	/api/profile	Delete profile and user
+PUT	/api/profile/experience	Add experience to profile
+DELETE	/api/profile/experience/:exp_id	Delete experience from profile
+PUT	/api/profile/education	Add education to profile
+DELETE	/api/profile/education/:edu_id	Delete education from profile
+
+
+📝 Post Routes
+
+Model	Method	Endpoint	Description
+Post	POST	/api/posts	Create a new post
+GET	/api/posts	Get all posts
+GET	/api/posts/:postId	Get post by ID
+DELETE	/api/posts/:postId	Delete post by ID
+PUT	/api/posts/like/:postId	Like a post
+PUT	/api/posts/unlike/:postId	Unlike a post
+POST	/api/posts/comment/:postId	Add comment to a post
+DELETE	/api/posts/comment/:postId/:commentId	Delete comment from a post
+
+
+
+
+✅ 20-Day Plan (1 Hour/Day)
+🔰 Week 1 – Setup + Auth System
+Day	Task
+Day 1	Initialize Node project, install dependencies, setup basic server.js, test route
+Day 2	Connect to MongoDB, create User model
+Day 3	Create Register route: POST /api/users with validation & bcrypt
+Day 4	Create Login route: POST /api/auth with JWT
+Day 5	Build Auth Middleware: auth.js
+Day 6	Create Protected Route: GET /api/auth
+Day 7	Test all Auth routes using Postman, commit code
+
+🧱 Week 2 – Profile System
+Day	Task
+Day 8	Create Profile model
+Day 9	Create/Update profile: POST /api/profile
+Day 10	Get own profile: GET /api/profile/me
+Day 11	Get all profiles & by ID: GET /api/profile, GET /api/profile/user/:user_id
+Day 12	Add experience: PUT /api/profile/experience
+Day 13	Delete experience: DELETE /api/profile/experience/:exp_id
+Day 14	Add/Delete education: PUT /api/profile/education, DELETE /api/profile/education/:edu_id
+
+📝 Week 3 – Posts, Likes, Comments
+Day	Task
+Day 15	Create Post model
+Day 16	Create/Get posts: POST /api/posts, GET /api/posts, GET /api/posts/:id
+Day 17	Delete post: DELETE /api/posts/:id
+Day 18	Like/Unlike post: PUT /api/posts/like/:id, PUT /api/posts/unlike/:id
+Day 19	Comment system: POST and DELETE /api/posts/comment/:id/:comment_id
+Day 20	Final cleanup, testing, Postman collection export, optional deploy to Render
