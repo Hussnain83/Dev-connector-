@@ -13,10 +13,12 @@ const PORT = process.env.PORT || 3000;
 
 // Import the router files
 const userRoutes = require("./routes/userRoutes");
+const profileRoutes = require("./routes/profileRoutes");
+
 
 // use the routers
 app.use("/user", userRoutes);
-
+app.use("/profile", profileRoutes);
 
 
 app.listen(PORT, ()=>{

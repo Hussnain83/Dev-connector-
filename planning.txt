@@ -1,19 +1,19 @@
 📊 DevConnector Project API Structure
 
 
-🧑‍💻 User Routes
+🧑‍💻 User Routes ✅       
 
 Model	Method	Endpoint	Description
-User	POST	/api/users/signup	Signup new user
-POST	/api/users/login	Login user and return JWT
-GET	/api/users/me	Get current logged-in user
-DELETE	/api/users/delete	Delete user account (and profile)
-GET	/api/users	Get list of all users (admin-only feature)
+User	POST	/api/users/signup	Signup new user          ✅
+POST	/api/users/login	Login user and return JWT        ✅
+GET	/api/users/me	Get current logged-in user               ✅
+DELETE	/api/users/delete	Delete user account (and profile)✅
+GET	/api/users	Get list of all users (admin-only feature)   ✅
 
 👤 Profile Routes
 
 Model	Method	Endpoint	Description
-Profile	GET	/api/profile/me	Get current user's profile
+Profile	GET	/api/profile/me	Get current user's profile       ✅
 POST	/api/profile	Create or update user profile
 GET	/api/profile	Get all profiles
 GET	/api/profile/user/:userId	Get profile by user ID
