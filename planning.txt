@@ -14,11 +14,11 @@ GET	/api/users	Get list of all users (admin-only feature)   ✅
 
 Model	Method	Endpoint	Description
 Profile	GET	/api/profile/me	Get current user's profile       ✅
-POST	/api/profile	Create or update user profile
-GET	/api/profile	Get all profiles
-GET	/api/profile/user/:userId	Get profile by user ID
-DELETE	/api/profile	Delete profile and user
-PUT	/api/profile/experience	Add experience to profile
+POST	/api/profile	Create or update user profile        ✅
+GET	/api/profile	Get all profiles                         ✅
+GET	/api/profile/user/:userId	Get profile by user ID       ✅
+DELETE	/api/profile	Delete profile and user              ✅
+PUT	/api/profile/experience	Add experience to profile        
 DELETE	/api/profile/experience/:exp_id	Delete experience from profile
 PUT	/api/profile/education	Add education to profile
 DELETE	/api/profile/education/:edu_id	Delete education from profile
