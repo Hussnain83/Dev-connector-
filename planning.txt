@@ -18,23 +18,25 @@ POST	/api/profile	Create or update user profile        ✅
 GET	/api/profile	Get all profiles                         ✅
 GET	/api/profile/user/:userId	Get profile by user ID       ✅
 DELETE	/api/profile	Delete profile and user              ✅
-PUT	/api/profile/experience	Add experience to profile        
-DELETE	/api/profile/experience/:exp_id	Delete experience from profile
-PUT	/api/profile/education	Add education to profile
-DELETE	/api/profile/education/:edu_id	Delete education from profile
+PUT	/api/profile/experience	Add experience to profile        ✅
+DELETE	/api/profile/experience/:exp_id	Delete experience 
+from profile                                                 ✅
+PUT	/api/profile/education	Add education to profile         ✅
+DELETE	/api/profile/education/:edu_id	Delete education
+ from profile                                                ✅
 
 
 📝 Post Routes
 
 Model	Method	Endpoint	Description
-Post	POST	/api/posts	Create a new post
-GET	/api/posts	Get all posts
-GET	/api/posts/:postId	Get post by ID
-DELETE	/api/posts/:postId	Delete post by ID
+Post	POST	/api/posts	Create a new post                 ✅
+GET	/api/posts	Get all posts                                 ✅
+GET	/api/posts/:postId	Get post by ID                        ✅
+DELETE	/api/posts/:postId	Delete post by ID                 
 PUT	/api/posts/like/:postId	Like a post
 PUT	/api/posts/unlike/:postId	Unlike a post
 POST	/api/posts/comment/:postId	Add comment to a post
-DELETE	/api/posts/comment/:postId/:commentId	Delete comment from a post
+DELETE	/api/posts/comment/:postId/:commentId	Delete comment from a post by the owner and one who comment
 
 
 

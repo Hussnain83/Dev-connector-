@@ -14,11 +14,13 @@ const PORT = process.env.PORT || 3000;
 // Import the router files
 const userRoutes = require("./routes/userRoutes");
 const profileRoutes = require("./routes/profileRoutes");
+const postRoutes = require("./routes/postRoutes");
 
 
 // use the routers
 app.use("/user", userRoutes);
 app.use("/profile", profileRoutes);
+app.use("/post", postRoutes);
 
 
 app.listen(PORT, ()=>{
